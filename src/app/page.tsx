@@ -1,11 +1,23 @@
-import Image from "next/image";
+import React from "react";
+import Container from "./components/ui/Container";
+import UserTable from "./components/ui/userTable/UserTable";
+import UserDetail from "./components/ui/userDetail/UserDetail";
 
-export default function Home() {
+const Home = () => {
   return (
-    <main>
-      <h2>This is home page</h2>
-      <button className="btn btn-neutral">Neutral</button>
-      <button className="btn btn-primary">Primary</button>
+    <main className="my-10">
+      <Container>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div className="order-2 md:order-1 col-span-2">
+            <UserTable></UserTable>
+          </div>
+          <div className="order-1 md:order-2">
+            <UserDetail></UserDetail>
+          </div>
+        </div>
+      </Container>
     </main>
   );
-}
+};
+
+export default Home;

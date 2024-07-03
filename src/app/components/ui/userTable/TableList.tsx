@@ -34,10 +34,16 @@ const TableList = ({
       <td>
         <button
           onClick={() => handleUserDetails(user)}
-          className="px-5 py-2 border hover:bg-[#047EFF] transition-all duration-300 focus:ring-2 ring- focus:bg-[#047EFF]  text-xs rounded-full text-white"
+          className="btn btn-sm btn-info  btn-outline text-xs rounded-full text-white"
         >
           Details
         </button>
+        {/* <button
+          onClick={() => handleUserDetails(user)}
+          className="px-5 py-2 border hover:bg-[#047EFF] transition-all duration-300 focus:ring-2 ring- focus:bg-[#047EFF]  text-xs rounded-full text-white"
+        >
+          Details
+        </button> */}
       </td>
     </tr>
   );

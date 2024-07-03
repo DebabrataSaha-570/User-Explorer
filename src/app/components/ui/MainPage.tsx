@@ -15,16 +15,17 @@ const MainPage = () => {
 
   return (
     <main className="py-10  bg-[#10121A] text-[#FFFFFF]">
-      <Container className="bg-[#191D2B] rounded-lg ">
-        {/* header  */}
-        <Header></Header>
+      <Container className=" ">
+        <div className="mx-2 px-3 py-4 bg-[#191D2B] rounded-lg">
+          <Header></Header>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 px-3">
-          <div className="order-2 md:order-1 col-span-2">
-            <UserTable handleUserDetails={handleUserDetails}></UserTable>
-          </div>
-          <div className="order-1 md:order-2">
-            <UserDetail user={user}></UserDetail>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 px-3 ">
+            <div className="order-2 md:order-1 col-span-2">
+              <UserTable handleUserDetails={handleUserDetails}></UserTable>
+            </div>
+            <div className="order-1 md:order-2">
+              <UserDetail user={user}></UserDetail>
+            </div>
           </div>
         </div>
       </Container>

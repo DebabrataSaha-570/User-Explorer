@@ -41,8 +41,8 @@ const UserDetail = ({ user }: any) => {
 
               <p className="text-sm">{user.Bio}</p>
 
-              <p className="mt-2">Email : {user.profile.email}</p>
-              <p className="">User Name : {user.profile.username}</p>
+              <p className="mt-2 text-sm">Email : {user.profile.email}</p>
+              <p className="text-sm">User Name : {user.profile.username}</p>
             </div>
           </div>
         </div>

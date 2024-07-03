@@ -4,7 +4,7 @@ import { IoSearchSharp } from "react-icons/io5";
 
 const Header = () => {
   return (
-    <div className="mb-10 flex justify-between items-center">
+    <div className="mb-10 mx-5 flex justify-between items-center">
       <h3 className="text-2xl font-bold">Users</h3>
 
       <div className=" flex mx-5">
@@ -15,7 +15,7 @@ const Header = () => {
           type="text"
           placeholder="Search here.."
         />
-        <button className=" px-3 py-2 text-white font-semibold bg-[#047EFF] rounded-r-lg text-sm ">
+        <button className=" px-3 py-2 text-white font-semibold  bg-info rounded-r-lg text-sm ">
           <FaSearch />
         </button>
       </div>
